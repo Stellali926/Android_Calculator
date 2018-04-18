@@ -16,4 +16,5 @@ A calculator app which runs in the android platforms avaiable for android versio
 - Support Reset Button, which will clear the calculations
 - Support delete button, in case typos
 
-### Copyright
+### License
+Copyright 2018 Stella Li
