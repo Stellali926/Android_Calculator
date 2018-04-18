@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="calBackground">#000000</color>
+    <color name="numButton">#C0C0C0</color>
+    <color name="calButton">#FFA500</color>
+    <color name="numColor">#ffffff</color>
+    <color name="btpressed">#999999</color>
+</resources>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/calBackground"
+    android:weightSum="8">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/numScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:maxLines="2"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/numColor"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:paddingBottom="5dp"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:textSize="50sp"
+            android:textColor="@color/numColor"
+            android:paddingBottom="5dp"
+            android:id="@+id/operator"
+            android:maxLines="2"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bt1"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/bt2"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/bt3"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btplus"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/calButton"
+                android:onClick="onClickOperator"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bt4"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/bt5"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/bt6"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btminus"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/calButton"
+                android:onClick="onClickOperator"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/bt7"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/bt8"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/bt9"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/numButton"
+                android:onClick="onClickNumbers"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/bttimes"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/calButton"
+                android:onClick="onClickOperator"
+                android:text="x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+                <Button
+                    android:id="@+id/bt0"
+                    style="@style/CustomButton"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/numButton"
+                    android:onClick="onClickNumbers"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/btpoint"
+                    style="@style/CustomButton"
+                    android:text="."
+                    android:layout_weight="1"
+                    android:onClick="onClickDot"
+                    android:backgroundTint="@color/numButton"/>
+
+                <Button
+                    android:id="@+id/btNeg"
+                    style="@style/CustomButton"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/calButton"
+                    android:onClick="onClickNumbers"
+                    android:text="+/-" />
+
+                <Button
+                    android:id="@+id/btdivide"
+                    style="@style/CustomButton"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/calButton"
+                    android:onClick="onClickOperator"
+                    android:text="/" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btSettings"
+                style="@style/CustomButton"
+                android:backgroundTint="@color/calButton"
+                android:onClick="onClickCopyright"
+                android:text="^_^"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btclear"
+                style="@style/CustomButton"
+                android:backgroundTint="@color/calButton"
+                android:onClick="onClickClear"
+                android:text="AC"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btdelete"
+                style="@style/CustomButton"
+                android:backgroundTint="@color/calButton"
+                android:onClick="onClickDel"
+                android:text="DEL"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/bequal"
+                style="@style/CustomButton"
+                android:layout_weight="1"
+                android:backgroundTint="@color/calButton"
+                android:onClick="onClickEqual"
+                android:text="=" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
