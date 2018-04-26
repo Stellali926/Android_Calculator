@@ -208,8 +208,6 @@ public class MainActivity extends AppCompatActivity {
         }
         strList.add(tempNum.toString());
 
-        System.out.println(strList.toString());
-
         //doing the calculation
         Deque<String> deque = new LinkedList<>();
         for (int j = 0; j < strList.size(); j++) {
@@ -248,8 +246,8 @@ public class MainActivity extends AppCompatActivity {
         int lenSecond = second.indexOf(".") == -1 ? 0 : second.length() - second.indexOf(".") - 1;
 
         long times = (long) Math.pow(10, Math.max(lenFirst, lenSecond));
-        long firstLong = (long)(Double.parseDouble(first) * (double)times);
-        long secondLong = (long)(Double.parseDouble(second) * (double)times);
+        long firstLong = (long)(Math.round(Double.parseDouble(first) * times));
+        long secondLong = (long)(Math.round(Double.parseDouble(second) * times));
 
         double res = ope.equals("+") ? (firstLong + secondLong) / (double)times : (firstLong - secondLong) / (double)times;
 
